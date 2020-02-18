@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fc732de-7c64-4895-a8f8-32817348b315" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/General_examples/Analyse_differences_between_DICOM_files.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/General_examples/Display_unicode_person_names.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/General_examples/Show_a_dicom_file_using_hierarchical_tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/General_examples/Show_working_with_memory-based_dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image_processing/Downsize_MRI_image_using_pydicom.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image_processing/Load_CT_slices_and_plot_axial_sagittal_and_coronal_images.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +33,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.Show_working_with_memory-based_dataset">
+  <component name="RunManager" selected="Python.Load_CT_slices_and_plot_axial_sagittal_and_coronal_images">
     <configuration name="Analyse_differences_between_DICOM_files" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pydicom" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,7 +76,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Introduction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Downsize_MRI_image_using_pydicom" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pydicom" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -86,11 +84,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Image_processing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Introduction.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Image_processing/Downsize_MRI_image_using_pydicom.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Load_CT_slices_and_plot_axial_sagittal_and_coronal_images" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pydicom" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Image_processing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Image_processing/Load_CT_slices_and_plot_axial_sagittal_and_coronal_images.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -122,10 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Load_CT_slices_and_plot_axial_sagittal_and_coronal_images" />
+        <item itemvalue="Python.Downsize_MRI_image_using_pydicom" />
         <item itemvalue="Python.Show_working_with_memory-based_dataset" />
         <item itemvalue="Python.Display_unicode_person_names" />
         <item itemvalue="Python.Analyse_differences_between_DICOM_files" />
-        <item itemvalue="Python.Introduction" />
       </list>
     </recent_temporary>
   </component>
@@ -147,49 +167,57 @@
       <option name="project" value="LOCAL" />
       <updated>1582005598997</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Pydicom Examples - General examples&#10;&#10;&#10;Show working with memory-based dataset - Usage 참고&#10;Show a dicom file using hierarchical tree - Usage 참고">
+      <created>1582011557485</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582011557485</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Pydicom Introduction&#10;&#10;&#10;Patient Position 변경 후 Save 한 dcm 파일 다시 읽어서 확인해 봄" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pydicom Introduction&#10;&#10;&#10;Patient Position 변경 후 Save 한 dcm 파일 다시 읽어서 확인해 봄" />
+    <MESSAGE value="Pydicom Examples - General examples&#10;&#10;&#10;Show working with memory-based dataset - Usage 참고&#10;Show a dicom file using hierarchical tree - Usage 참고" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pydicom Examples - General examples&#10;&#10;&#10;Show working with memory-based dataset - Usage 참고&#10;Show a dicom file using hierarchical tree - Usage 참고" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-2176" y="-573" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582005082693">
       <screen x="-3840" y="-1076" width="2560" height="1400" />
     </state>
     <state x="-2176" y="-573" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-3840.-1076.2560.1400@-3840.-1076.2560.1400" timestamp="1582005082693" />
-    <state x="-2268" y="-784" key="CommitChangelistDialog2" timestamp="1582005598323">
+    <state x="-2268" y="-784" key="CommitChangelistDialog2" timestamp="1582011556899">
       <screen x="-3840" y="-1076" width="2560" height="1400" />
     </state>
-    <state x="-2268" y="-784" key="CommitChangelistDialog2/0.0.1920.1040/-3840.-1076.2560.1400@-3840.-1076.2560.1400" timestamp="1582005598323" />
-    <state width="1259" height="398" key="GridCell.Tab.0.bottom" timestamp="1582009267573">
+    <state x="-2268" y="-784" key="CommitChangelistDialog2/0.0.1920.1040/-3840.-1076.2560.1400@-3840.-1076.2560.1400" timestamp="1582011556899" />
+    <state width="1254" height="395" key="GridCell.Tab.0.bottom" timestamp="1582016075512">
       <screen x="-3840" y="-1076" width="2560" height="1400" />
     </state>
-    <state width="1259" height="398" key="GridCell.Tab.0.bottom/0.0.1920.1040/-3840.-1076.2560.1400@-3840.-1076.2560.1400" timestamp="1582009267573" />
-    <state width="1259" height="398" key="GridCell.Tab.0.center" timestamp="1582009267572">
+    <state width="1254" height="395" key="GridCell.Tab.0.bottom/0.0.1920.1040/-3840.-1076.2560.1400@-3840.-1076.2560.1400" timestamp="1582016075512" />
+    <state width="1254" height="395" key="GridCell.Tab.0.center" timestamp="1582016075511">
       <screen x="-3840" y="-1076" width="2560" height="1400" />
     </state>
-    <state width="1259" height="398" key="GridCell.Tab.0.center/0.0.1920.1040/-3840.-1076.2560.1400@-3840.-1076.2560.1400" timestamp="1582009267572" />
-    <state width="1259" height="398" key="GridCell.Tab.0.left" timestamp="1582009267572">
+    <state width="1254" height="395" key="GridCell.Tab.0.center/0.0.1920.1040/-3840.-1076.2560.1400@-3840.-1076.2560.1400" timestamp="1582016075511" />
+    <state width="1254" height="395" key="GridCell.Tab.0.left" timestamp="1582016075511">
       <screen x="-3840" y="-1076" width="2560" height="1400" />
     </state>
-    <state width="1259" height="398" key="GridCell.Tab.0.left/0.0.1920.1040/-3840.-1076.2560.1400@-3840.-1076.2560.1400" timestamp="1582009267572" />
-    <state width="1259" height="398" key="GridCell.Tab.0.right" timestamp="1582009267573">
+    <state width="1254" height="395" key="GridCell.Tab.0.left/0.0.1920.1040/-3840.-1076.2560.1400@-3840.-1076.2560.1400" timestamp="1582016075511" />
+    <state width="1254" height="395" key="GridCell.Tab.0.right" timestamp="1582016075511">
       <screen x="-3840" y="-1076" width="2560" height="1400" />
     </state>
-    <state width="1259" height="398" key="GridCell.Tab.0.right/0.0.1920.1040/-3840.-1076.2560.1400@-3840.-1076.2560.1400" timestamp="1582009267573" />
-    <state x="-2328" y="-643" key="Vcs.Push.Dialog.v2" timestamp="1582005601563">
+    <state width="1254" height="395" key="GridCell.Tab.0.right/0.0.1920.1040/-3840.-1076.2560.1400@-3840.-1076.2560.1400" timestamp="1582016075511" />
+    <state x="-2328" y="-643" key="Vcs.Push.Dialog.v2" timestamp="1582011563409">
       <screen x="-3840" y="-1076" width="2560" height="1400" />
     </state>
-    <state x="-2328" y="-643" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-3840.-1076.2560.1400@-3840.-1076.2560.1400" timestamp="1582005601563" />
+    <state x="-2328" y="-643" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-3840.-1076.2560.1400@-3840.-1076.2560.1400" timestamp="1582011563409" />
     <state x="-2167" y="-642" key="VcsDiffUtil.ChangesDialog" timestamp="1582005157605">
       <screen x="-3840" y="-1076" width="2560" height="1400" />
     </state>
     <state x="-2167" y="-642" key="VcsDiffUtil.ChangesDialog/0.0.1920.1040/-3840.-1076.2560.1400@-3840.-1076.2560.1400" timestamp="1582005157605" />
-    <state x="-2229" y="-552" key="com.intellij.ide.util.TipDialog" timestamp="1582004212260">
+    <state x="-2229" y="-552" key="com.intellij.ide.util.TipDialog" timestamp="1582014242717">
       <screen x="-3840" y="-1076" width="2560" height="1400" />
     </state>
-    <state x="-2229" y="-552" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-3840.-1076.2560.1400@-3840.-1076.2560.1400" timestamp="1582004212260" />
+    <state x="-2229" y="-552" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-3840.-1076.2560.1400@-3840.-1076.2560.1400" timestamp="1582014242717" />
   </component>
 </project>
