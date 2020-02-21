@@ -157,7 +157,10 @@ if assoc.is_established:
                 ModalityPerformedProcedureStepSOPClass,
                 mpps_instance_uid
             )
-            print(attr_list)
+            # print(attr_list)
+            attr_list.is_little_endian = True
+            attr_list.is_implicit_VR = True
+            attr_list.save_as('mpps_ds.dcm')
             if status:
                 print('Final N-SET request status: 0x{0:04x}'.format(status.Status))
     else:
