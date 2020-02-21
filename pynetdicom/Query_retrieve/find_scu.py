@@ -8,7 +8,7 @@ ae = AE()
 ae.add_requested_context(PatientRootQueryRetrieveInformationModelFind)
 
 ds = Dataset()
-ds.PatientName = 'CITIZEN^Jan'
+ds.PatientName = 'CQ500-CT-310'
 ds.QueryRetrieveLevel = 'PATIENT'
 
 assoc = ae.associate('localhost', 11112)

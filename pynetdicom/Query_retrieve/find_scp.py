@@ -20,9 +20,9 @@ def handle_find(event):
     for fpath in os.listdir(fdir):
         if fpath.endswith('.dcm'):
             instances.append(dcmread(os.path.join(fdir, fpath), force=True))
-    print(len(instances))
+    print('PatientName 없는 instances 제거 전: ', len(instances))
     instances = [inst for inst in instances if inst.get('PatientName', '') != '']
-    print(len(instances))
+    print('PatientName 없는 instances 제거 후: ', len(instances))
     if 'QueryRetrieveLevel' not in ds:
         yield 0xC000, None
         return
@@ -36,7 +36,7 @@ def handle_find(event):
             # Skip the other possible values...
         # Skip the other possible attributes...
     # Skip the other QR levels...
-    print(matching)
+
     for instances in matching:
         # Check if C-CANCEL has been received
         if event.is_cancelled:
@@ -45,7 +45,7 @@ def handle_find(event):
 
         identifier = Dataset()
         identifier.PatientName = instances.PatientName
-        identifier.QueryRetrieveLevel = instances.QueryRetrieveLevel
+        identifier.QueryRetrieveLevel = 'PATIENT' #instances.QueryRetrieveLevel
 
         # Pending
         yield (0xFF00, identifier)
